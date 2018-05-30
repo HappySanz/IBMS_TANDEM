@@ -19,8 +19,8 @@ android {
         applicationId "com.rd.strivos.tandem"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 15
-        versionName "1.1.14"
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
     }
 

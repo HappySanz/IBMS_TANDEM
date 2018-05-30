@@ -39,7 +39,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.rd.strivos.tandem.MainActivity"
+            android:name="com.rd.strivos.tandem.activity.MainActivity"
             android:clearTaskOnLaunch="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -51,7 +51,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.rd.strivos.tandem.Splash"
+            android:name="com.rd.strivos.tandem.activity.Splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,41 +60,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.rd.strivos.tandem.LoginForm"
-            android:label="COBBY" />
+            android:name="com.rd.strivos.tandem.activity.LoginForm"
+            android:label="@string/app_name" />
         <activity
-            android:name="com.rd.strivos.tandem.Register"
+            android:name="com.rd.strivos.tandem.activity.Register"
             android:label="User Registration" />
         <activity
-            android:name="com.rd.strivos.tandem.EnablePermission"
-            android:label="COBBY" />
+            android:name="com.rd.strivos.tandem.activity.EnablePermission"
+            android:label="@string/app_name" />
         <activity
-            android:name="com.rd.strivos.tandem.OTP"
+            android:name="com.rd.strivos.tandem.activity.OTP"
             android:label="Confirm OTP" />
         <activity
-            android:name=".SetPIN"
+            android:name=".activity.SetPIN"
             android:label="Set Login PIN" />
-        <activity android:name="com.rd.strivos.tandem.MobileNumberVerification" />
+        <activity android:name="com.rd.strivos.tandem.activity.MobileNumberVerification" />
         <activity
-            android:name="com.rd.strivos.tandem.NewProspectFragment"
+            android:name="com.rd.strivos.tandem.newprospect.NewProspectFragment"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="NEW REGISTRATION"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
         <activity
-            android:name="com.rd.strivos.tandem.Cam_offline"
+            android:name="com.rd.strivos.tandem.newprospect.cameraactivity.Cam_offline"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".Cam_offline_PersonMeet"
+            android:name=".newprospect.cameraactivity.Cam_offline_PersonMeet"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".Cam_offline_VCardBack"
+            android:name=".newprospect.cameraactivity.Cam_offline_VCardBack"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 
@@ -103,32 +103,32 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="NEW REGISTRATION"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
         <activity
             android:name="com.rd.strivos.tandem.NewConsultantFragment"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="NEW REGISTRATION"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
         <activity
             android:name="com.rd.strivos.tandem.NewDealerFragment"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="NEW REGISTRATION"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
-        <activity android:name="com.rd.strivos.tandem.PinEntryView" />
+        <activity android:name="com.rd.strivos.tandem.activity.PinEntryView" />
         <activity android:name="com.rd.strivos.tandem.Fetch" />
         <activity android:name="com.rd.strivos.tandem.AddMorePerson" />
         <activity android:name=".AddProduct" />
@@ -139,10 +139,10 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="EXISTING PROSPECT"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
         <activity android:name="com.rd.strivos.tandem.AddIndustryServed" />
         <activity android:name="com.rd.strivos.tandem.AddExistingBusinessProducts" />
@@ -154,10 +154,10 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="EXISTING CONSULTANT"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
         <activity android:name="com.rd.strivos.tandem.AddBranchInfoOEM" />
         <activity android:name="com.rd.strivos.tandem.AddOEMIndustryInfo" />
@@ -168,30 +168,30 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="EXISTING OEM"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
         <activity
             android:name="com.rd.strivos.tandem.ExistingDealerFragment"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="EXISTING DEALER"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
         <activity
             android:name="com.rd.strivos.tandem.OldCustomerFragment"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="EXISTING CUSTOMER"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
 
         <activity android:name=".AddProductInfoCustomer" />
@@ -201,22 +201,22 @@
         <activity android:name=".AddStatutoryDocumentsInfoCustomer" />
         <activity android:name=".AddMaterialReturnInfoCustomer" />
         <activity android:name="com.rd.strivos.tandem.getDataFromServerFragment" />
-        <activity android:name="com.rd.strivos.tandem.PersonAddListPage" />
-        <activity android:name="com.rd.strivos.tandem.PersonAddPage" />
+        <activity android:name="com.rd.strivos.tandem.newprospect.personadd.PersonAddListPage" />
+        <activity android:name="com.rd.strivos.tandem.newprospect.personadd.PersonAddPage" />
         <activity android:name="com.rd.strivos.tandem.ExpenseAddPage" />
-        <activity android:name="com.rd.strivos.tandem.ExpenseListPage" />
-        <activity android:name="com.rd.strivos.tandem.ProductListPage" />
+        <activity android:name="com.rd.strivos.tandem.newprospect.ExpenseListPage" />
+        <activity android:name="com.rd.strivos.tandem.newprospect.ProductListPage" />
         <activity android:name="com.rd.strivos.tandem.ProductAddPage" />
-        <activity android:name="com.rd.strivos.tandem.SetPINtoLogin" />
-        <activity android:name="com.rd.strivos.tandem.ConfirmPin" />
+        <activity android:name="com.rd.strivos.tandem.activity.SetPINtoLogin" />
+        <activity android:name="com.rd.strivos.tandem.activity.ConfirmPin" />
         <activity android:name="com.rd.strivos.tandem.SparesListPage" />
         <activity android:name="com.rd.strivos.tandem.SparesAddPage" />
         <activity android:name="com.rd.strivos.tandem.PaymentsListPage" />
         <activity android:name="com.rd.strivos.tandem.PaymentAddPage" />
         <activity android:name="com.rd.strivos.tandem.GrievanceListPage" />
         <activity android:name="com.rd.strivos.tandem.GrievanceAddPage" />
-        <activity android:name="com.rd.strivos.tandem.StatutoryDocumentsListPage" />
-        <activity android:name="com.rd.strivos.tandem.StatutoryDocumentsAddPage" />
+        <activity android:name="com.rd.strivos.tandem.statutorydocuments.StatutoryDocumentsListPage" />
+        <activity android:name="com.rd.strivos.tandem.statutorydocuments.StatutoryDocumentsAddPage" />
 
         <!--                               Service Visit                   -->
         <!--                                     -                         -->
@@ -226,10 +226,10 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="Service Visit"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
 
         <activity
@@ -288,7 +288,7 @@
         </activity>
 
         <activity
-            android:name="com.rd.strivos.tandem.StatutoryDocumentsListPageServiceVisit"
+            android:name="com.rd.strivos.tandem.statutorydocuments.StatutoryDocumentsListPageServiceVisit"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="Add Statutory Documents"
             android:launchMode="singleTop"
@@ -335,25 +335,25 @@
         <!--                                     -                         -->
         <!--                                     -                         -->
         <activity
-            android:name="com.rd.strivos.tandem.PreCommissioningProductDtls"
+            android:name=".fragment.precommissioning.PreCommissioningProductDtls"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="Select Product"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
 
         <activity
-            android:name="com.rd.strivos.tandem.PreCommissioningParameterInfo"
+            android:name=".fragment.precommissioning.PreCommissioningParameterInfo"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="Parameter Info"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
 
         </activity>
 
@@ -362,13 +362,13 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="Expenses"
             android:launchMode="singleTop"
-            android:parentActivityName="com.rd.strivos.tandem.MainActivity">
+            android:parentActivityName="com.rd.strivos.tandem.activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rd.strivos.tandem.MainActivity" />
+                android:value="com.rd.strivos.tandem.activity.MainActivity" />
         </activity>
-        <activity android:name="com.rd.strivos.tandem.CommissioningPrecommList" />
-        <activity android:name="com.rd.strivos.tandem.CommissioningParameterInfo" />
+        <activity android:name=".fragment.commissioning.CommissioningPrecommList" />
+        <activity android:name=".fragment.commissioning.CommissioningParameterInfo" />
 
 
         <service android:name="com.rd.strivos.tandem.BroadcastService" />

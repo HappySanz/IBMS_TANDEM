@@ -12,6 +12,10 @@ import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.rd.strivos.tandem.newprospect.personadd.ListData;
+import com.rd.strivos.tandem.newprospect.personadd.PersonAddPage;
+import com.rd.strivos.tandem.newprospect.personadd.PersonDBHelper;
+
 import java.util.ArrayList;
 
 /**

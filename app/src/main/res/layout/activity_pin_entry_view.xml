@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/pinstripe_repeating"
     android:keepScreenOn="true"
-    tools:context=".PinEntryView" >
+    tools:context=".activity.PinEntryView" >
 
     <TextView
         android:id="@+id/titleBox"

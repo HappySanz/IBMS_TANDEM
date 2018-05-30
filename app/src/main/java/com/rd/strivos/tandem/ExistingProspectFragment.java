@@ -22,6 +22,10 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.rd.strivos.tandem.newprospect.cameraactivity.Cam_offline;
+import com.rd.strivos.tandem.newprospect.cameraactivity.Cam_offline_PersonMeet;
+import com.rd.strivos.tandem.newprospect.cameraactivity.Cam_offline_VCardBack;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;

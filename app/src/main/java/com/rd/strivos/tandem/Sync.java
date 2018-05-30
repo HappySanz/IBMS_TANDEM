@@ -22,6 +22,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.rd.strivos.tandem.newprospect.personadd.PersonDBHelper;
+import com.rd.strivos.tandem.statutorydocuments.StatutoryDocumentsDBHelper;
+import com.rd.strivos.tandem.utils.WebServices;
+
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPReply;

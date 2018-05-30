@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.rd.strivos.tandem.fragment.precommissioning.PreCommissioningBaseAdapter;
+
 import java.util.ArrayList;
 
 /**
