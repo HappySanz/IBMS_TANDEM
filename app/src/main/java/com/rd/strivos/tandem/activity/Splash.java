@@ -67,7 +67,7 @@ public class Splash extends Activity {
                     finish();
                     if (userPinCount >= 1) {
                         Intent i = new Intent(Splash.this,
-                                LoginForm.class);
+                                tandem_login.class);
                         startActivity(i);
                     } else {
 
@@ -78,12 +78,12 @@ public class Splash extends Activity {
                                 startActivity(i);
                             } else {
                                 Intent i = new Intent(Splash.this,
-                                        Register.class);
+                                        tandem_login.class);
                                 startActivity(i);
                             }
                         } else {
                             Intent i = new Intent(Splash.this,
-                                    Register.class);
+                                    tandem_login.class);
                             startActivity(i);
                         }
                     }

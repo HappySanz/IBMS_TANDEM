@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.rd.strivos.tandem.PermissionUtil;
+import com.rd.strivos.tandem.R;
 
 /**
  * Created by Data Crawl 6 on 24-Jun-16.
@@ -30,7 +31,7 @@ public class EnablePermission extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.rd.strivos.tandem.R.layout.activity_enable_permission);
+        setContentView(R.layout.activity_enable_permission);
 
         _Submit = (Button) findViewById(com.rd.strivos.tandem.R.id.btn_submit);
 
@@ -40,7 +41,7 @@ public class EnablePermission extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(EnablePermission.this,
-                        Register.class);
+                        tandem_login.class);
                 startActivity(i);
 
             }

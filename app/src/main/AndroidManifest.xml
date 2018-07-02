@@ -217,6 +217,10 @@
         <activity android:name="com.rd.strivos.tandem.GrievanceAddPage" />
         <activity android:name="com.rd.strivos.tandem.statutorydocuments.StatutoryDocumentsListPage" />
         <activity android:name="com.rd.strivos.tandem.statutorydocuments.StatutoryDocumentsAddPage" />
+        <activity android:name=".activity.tandem_login" />
+        <activity android:name=".activity.RegisterPhoneNumber" />
+        <activity android:name=".activity.PhoneNumberLogin" />
+        <activity android:name=".activity.VerifyOTPonPhoneNumber" />
 
         <!--                               Service Visit                   -->
         <!--                                     -                         -->

@@ -1,5 +1,7 @@
 package com.rd.strivos.tandem.utils;
 
+import android.os.AsyncTask;
+
 import org.apache.http.conn.ConnectTimeoutException;
 import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
@@ -25,8 +27,66 @@ public class WebServices {
     private static final String SOAP_ACTION = "http://223.30.140.163:82/";
     private static final String NAMESPACE = "http://223.30.140.163:82/";
     private static final String URL = "http://223.30.140.163:82/InboxDetails.asmx";
-    private static final String CONNANAME = "Data Source=223.30.140.163\\SQLEXPRESS;Initial Catalog=IBMS_DB_UAT;User ID=sa;Password=coburg@1234";
+    private static final String CONNANAME = "Data Source=strivos.database.windows.net;Initial Catalog=Tandem_STARS;User ID=strivos_user@Strivos;Password=e5y+JPk4?z";
 
+
+    public static String checkRegisteredPhone(String phoneNumber, String mobileModel, String mobileIMEI, String otp)
+            throws Exception {
+
+        try {
+
+            SoapObject request = new SoapObject(NAMESPACE, "isRegisteredPhone");
+
+            request.addProperty("CheckPhoneNumber", phoneNumber);
+            request.addProperty("Model", mobileModel);
+            request.addProperty("IMEINo", mobileIMEI);
+            request.addProperty("OTP", otp);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
+                    SoapEnvelope.VER11);
+            envelope.bodyOut = request;
+            envelope.encodingStyle = SoapSerializationEnvelope.XSD;
+            envelope.setOutputSoapObject(request);
+            AndroidHttpTransport androidHttpTransport = new AndroidHttpTransport(
+                    URL);
+            androidHttpTransport.call(SOAP_ACTION, envelope);
+            Object result = (Object) envelope.getResponse();
+            return result.toString();
+
+        } catch (ConnectTimeoutException ex) {
+            ex.printStackTrace();
+            throw ex;
+        } catch (ConnectException ex) {
+            ex.printStackTrace();
+            throw ex;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+
+    }
+
+    private class MyTask extends AsyncTask<String, Integer, String> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+            return null;
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+        }
+    }
 
 
     public static String EnquiryBank(String COMPANYM_ID, String DOCUMENTM_ID, String DOCUMENTDATE, String EMPLOYEEM_ID,
